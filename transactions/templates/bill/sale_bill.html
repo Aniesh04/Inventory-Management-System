@@ -29,10 +29,10 @@
                     
                         <tr style="text-align: center;">
                             <td >
-                                <span style="font-size: 350%;">MyStocks</span> <br>
+                                <span style="font-size: 350%;">StockSavvy</span> <br>
                                 <span style="font-size: 120%; font-weight: bold;">DEALERS IN : Products</span> <br>
                                 <span style="font-weight: bold;">REGD ADDRESS :</span> VIT AP Campus<br>Amaravathi, AP<br>
-                                <span style="font-weight: bold;">EMAIL : mystocks@gmail.com</span> <br><br>
+                                <span style="font-weight: bold;">EMAIL : stocksavvy@gmail.com</span> <br><br>
                             </td>
                         </tr>
                     
@@ -41,11 +41,11 @@
                             <table class="outer-box" style="width: 800px; margin-left: auto; margin-right: auto;">
                                 <tbody>
                                     <tr>
-                                        <td class="inner-box" style="text-align: center; font-weight: bold;" colspan="3">GSTIN NO - 123456789CASTR0</td>
+                                        <td class="inner-box" style="text-align: center; font-weight: bold;" colspan="3">GSTIN NO. - 123456789CASTR0</td>
                                     </tr>
                                     <tr>
                                         <td class="inner-box" style="width: 50%; font-weight: bold;">&nbsp;NAME OF CONSIGNEE / BUYER</td>
-                                        <td class="inner-box" style="width: 25%; font-weight: bold;">&nbsp;INVOICE NO</td>
+                                        <td class="inner-box" style="width: 25%; font-weight: bold;">&nbsp;INVOICE NO.</td>
                                         <td class="inner-box" style="width: 25%;">&nbsp;{{ bill.billno }}</td>
                                     </tr>
                                     <tr>
@@ -55,11 +55,11 @@
                                     </tr>
                                     <tr>
                                         <td class="inner-box" style="width: 50%;" rowspan="3">{{ bill.address|linebreaks }}</td>
-                                        <td class="inner-box" style="width: 25%; font-weight: bold;">&nbsp;EWAY NO</td>
+                                        <td class="inner-box" style="width: 25%; font-weight: bold;">&nbsp;EWAY NO.</td>
                                         <td class="inner-box align-middle" style="width: 25%;"> <input type="text" name="eway" class="align-middle" style="border: 0; overflow: hidden;" value="{% if billdetails.eway %}{{ billdetails.eway }}{% endif %}"> </td>
                                     </tr>
                                     <tr>
-                                        <td class="inner-box" style="width: 25%; font-weight: bold;">&nbsp;VEH NO</td>
+                                        <td class="inner-box" style="width: 25%; font-weight: bold;">&nbsp;VEHICLE NO.</td>
                                         <td class="inner-box align-middle" style="width: 25%;"> <input type="text" name="veh" class="align-middle" style="border: 0; overflow: hidden;" value="{% if billdetails.veh %}{{ billdetails.veh }}{% endif %}"> </td>
                                     </tr>
                                     <tr>
@@ -67,8 +67,8 @@
                                         <td class="inner-box align-middle" style="width: 25%;"> <input type="text" name="destination" class="align-middle" style="border: 0; overflow: hidden;" value="{% if billdetails.destination %}{{ billdetails.destination }}{% endif %}"> </td>
                                     </tr>
                                     <tr>
-                                        <td class="inner-box" style="font-weight: bold;">&nbsp;GSTIN No : {{ bill.gstin }} </td>
-                                        <td class="inner-box" style="width: 25%; font-weight: bold;">&nbsp;PO NO &amp; DATE</td>
+                                        <td class="inner-box" style="font-weight: bold;">&nbsp;GSTIN No. : {{ bill.gstin }} </td>
+                                        <!-- <td class="inner-box" style="width: 25%; font-weight: bold;">&nbsp;PO NO &amp; DATE</td> -->
                                         <td class="inner-box align-middle" style="width: 25%;"> <input type="text" name="po" class="align-middle" style="border: 0; overflow: hidden;" value="{% if billdetails.po %}{{ billdetails.po }}{% endif %}"> </td>
                                     </tr>
                                 </tbody>
