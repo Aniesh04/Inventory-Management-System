@@ -30,6 +30,7 @@ class StockCreateView(SuccessMessageMixin, CreateView):                         
         context = super().get_context_data(**kwargs)
         context["title"] = 'New Stock'
         context["savebtn"] = 'Add to Inventory'
+        print(context)
         return context       
 
 
@@ -45,6 +46,7 @@ class StockUpdateView(SuccessMessageMixin, UpdateView):                         
         context["title"] = 'Edit Stock'
         context["savebtn"] = 'Update Stock'
         context["delbtn"] = 'Delete Stock'
+        print(context)
         return context
 
 
